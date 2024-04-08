@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creación de Contenido Educativo</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+
+<body class="bg-gray-100 p-6">
+
+    <div class="bg-gray-100 min-h-screen flex justify-center items-center">
+        <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-lg">
+
+            <h1 class="text-3xl font-bold mb-8 text-center text-gray-800">Crear Contenido Educativo</h1>
+            <form action="Soporte_tecnico.html" method="POST" class="w-full max-w-md m-5">
+                <div class="mb-6">
+                    <label for="titulo" class="block text-sm font-semibold text-gray-900">Título</label>
+                    <input type="text" id="titulo" name="titulo"
+                        class="bg-gray-200 text-sm rounded-lg w-full p-3 focus:outline-none focus:ring focus:border-blue-500"
+                        placeholder="Ingrese el título del contenido" required>
+                </div>
+                <div class="mb-6">
+                    <label for="descripcion" class="block text-sm font-semibold text-gray-900">Descripción</label>
+                    <textarea id="descripcion" name="descripcion" rows="4"
+                        class="bg-gray-200 text-sm rounded-lg w-full p-3 focus:outline-none focus:ring focus:border-blue-500"
+                        placeholder="Ingrese una descripción del contenido"></textarea>
+                </div>
+                <div class="mb-6">
+                    <label for="lectura" class="block text-sm font-semibold text-gray-900">Material de Lectura</label>
+                    <input type="text" id="lectura" name="lectura"
+                        class="bg-gray-200 text-sm rounded-lg w-full p-3 focus:outline-none focus:ring focus:border-blue-500"
+                        placeholder="Ingrese enlaces a materiales de lectura">
+                </div>
+                <div class="mb-6">
+                    <label for="video" class="block text-sm font-semibold text-gray-900">Videos</label>
+                    <input type="text" id="video" name="video"
+                        class="bg-gray-200 text-sm rounded-lg w-full p-3 focus:outline-none focus:ring focus:border-blue-500"
+                        placeholder="Ingrese enlaces a videos relacionados">
+                </div>
+                <div class="mb-6">
+                    <label for="tarea" class="block text-sm font-semibold text-gray-900">Tareas</label>
+                    <input type="text" id="tarea" name="tarea"
+                        class="bg-gray-200 text-sm rounded-lg w-full p-3 focus:outline-none focus:ring focus:border-blue-500"
+                        placeholder="Ingrese enlaces a tareas o ejercicios">
+                </div>
+                <div class="mb-6">
+                    <label for="cuestionario" class="block text-sm font-semibold text-gray-900">Cuestionarios</label>
+                    <input type="text" id="cuestionario" name="cuestionario"
+                        class="bg-gray-200 text-sm rounded-lg w-full p-3 focus:outline-none focus:ring focus:border-blue-500"
+                        placeholder="Ingrese enlaces a cuestionarios">
+                </div>
+                <button type="submit"
+                    class="bg-blue-500 text-white font-semibold px-4 py-2 rounded-md hover:bg-blue-600 transition-colors">Publicar
+                    Contenido</button>
+            </form>
+        </div>
+    </div>
+    <a href="formulario_inicio_sesion.html" class="text-blue-600 hover:underline block mt-4">Volver al inicio de sesión</a>
+
+</body>
+
+</html>

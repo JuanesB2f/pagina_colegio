@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Perfil de Usuario</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+</head>
+
+<body class="bg-gray-100 p-6">
+
+    <div class="bg-gray-100 min-h-screen flex justify-center items-center">
+        <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+
+            <h1 class="text-2xl font-bold mb-8 uppercase text-center">Formulario de Perfil de Usuario</h1>
+            <form action="" method="POST" class="w-full max-w-md m-5">
+                <div class="flex justify-center mb-6">
+                    <div class="w-32 h-32 overflow-hidden relative">
+                        <input type="file" id="imagen" name="imagen" accept="image/*"
+                            class="absolute inset-0 opacity-0 w-full h-full cursor-pointer">
+                        <label for="imagen">
+                            <div class="w-full h-full bg-gray-200 flex items-center justify-center">
+                                <span class="text-gray-600"> imagen</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label for="nombre" class="block mb-0.5 text-sm font-medium text-gray-900">Nombre</label>
+                    <input type="text" id="nombre" name="nombre"
+                        class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2"
+                        placeholder="Nombre completo" required>
+                </div>
+                <div class="mb-4">
+                    <label for="apellido" class="block mb-0.5 text-sm font-medium text-gray-900">Apellido</label>
+                    <input type="text" id="apellido" name="apellido"
+                        class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2"
+                        placeholder="Apellido completo" required>
+                </div>
+                <div class="mb-4">
+                    <label for="contacto" class="block mb-0.5 text-sm font-medium text-gray-900">Información de
+                        Contacto</label>
+                    <input type="text" id="contacto" name="contacto"
+                        class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2"
+                        placeholder="Información de contacto actualizada">
+                </div>
+                <div class="mb-4">
+                    <label for="historial" class="block mb-0.5 text-sm font-medium text-gray-900">Historial Educativo
+                        (para estudiantes) o Experiencia Profesional (para profesores)</label>
+                    <textarea id="historial" name="historial" rows="4"
+                        class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2"
+                        placeholder="Ingresa tu historial educativo o experiencia profesional"></textarea>
+                </div>
+                <div class="mb-4">
+                    <label for="otra_informacion" class="block mb-0.5 text-sm font-medium text-gray-900">Otra
+                        Información</label>
+                    <textarea id="otra_informacion" name="otra_informacion" rows="4"
+                        class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2"
+                        placeholder="Ingresa cualquier otra información relevante"></textarea>
+                </div>
+                <button type="submit"
+                    class="bg-blue-500 text-white font-semibold px-4 py-2 rounded-md hover:bg-blue-600 transition-colors">Actualizar
+                    Perfil</button>
+            </form>
+        </div>
+    </div>
+    <a href="" class="text-blue-600 hover:underline">Volver al inicio de sesión</a>
+</body>
+
+</html>

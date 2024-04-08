@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma Registro profesores</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body class="bg-gray-100 p-6">
+
+    <div class="bg-gray-100 min-h-screen flex justify-center items-center">
+        <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+
+            <h1 class="text-2xl font-bold mb-8 uppercase text-center">Formulario de Soporte Técnico</h1>
+            <form action="perfil.usuario.html" method="POST" class="w-full max-w-md m-5">
+                <div class="mb-4">
+                    <label for="problema" class="block mb-0.5 text-sm font-medium text-gray-900">Descripción del
+                        Problema</label>
+                    <textarea id="problema" name="problema" rows="4"
+                        class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2"
+                        placeholder="Describe el problema que estás experimentando"></textarea>
+                </div>
+                <div class="mb-4">
+                    <label for="capturas" class="block mb-0.5 text-sm font-medium text-gray-900">Adjuntar Capturas de
+                        Pantalla (Opcional)</label>
+                    <input type="file" id="capturas" name="capturas" accept="image/*"
+                        class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2">
+                </div>
+                <div class="mb-4">
+                    <label for="contacto" class="block mb-0.5 text-sm font-medium text-gray-900">Información de
+                        Contacto</label>
+                    <input type="text" id="contacto" name="contacto"
+                        class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2"
+                        placeholder="Proporciona tu dirección de correo electrónico o número de teléfono" required>
+                </div>
+                <button type="submit"
+                    class="bg-blue-500 text-white font-semibold px-4 py-2 rounded-md hover:bg-blue-600 transition-colors">Enviar
+                    Solicitud de Soporte</button>
+            </form>
+        </div>
+    </div>
+    <a href="inicio_sesion_E.html" class="text-blue-600 hover:underline">Volver al inicio de sesión</a>
+</body>
+
+</html>
