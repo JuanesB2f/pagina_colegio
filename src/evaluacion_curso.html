@@ -7,11 +7,23 @@
     <title>Evaluación curso</title>
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
+<header>
+    <nav>
 
-<body class="bg-gray-100 p-6">
+        <ul>
+            <li><a href="perfil.usuario.html">Perfil usuario</a></li>
+            <li><a href="evaluacion_curso.html">Evaluacion Curso </a></li>
+            <li><a href="formulario_inscripcion_curso.html">Inscripcion curso</a></li>
+            <li><a href="Soporte_tecnico.html">soporte tecnico</a></li>
+            <li><a href="R_Estudiantes.html">Registro Estudiantes</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body class="bg-gray-100">
 
     <div class="bg-gray-100 min-h-screen flex justify-center items-center">
-        <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+        <div class="p-8 rounded-lg shadow-md w-full max-w-md fondo-lindo">
 
             <h1 class="text-2xl font-bold mb-8 uppercase text-center">Formulario de Evaluación de Curso</h1>
             <form action="Soporte_tecnico.html" method="POST" class="w-full max-w-md m-5"></form>
@@ -19,7 +31,7 @@
                     <label for="estructura" class="block mb-0.5 text-sm font-medium text-gray-900">Estructura del
                         Curso</label>
                     <select id="estructura" name="estructura"
-                        class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2">
+                        class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2 fondo-inputs">
                         <option value="excelente">Excelente</option>
                         <option value="bueno">Bueno</option>
                         <option value="regular">Regular</option>
@@ -30,7 +42,7 @@
                     <label for="material" class="block mb-0.5 text-sm font-medium text-gray-900">Calidad del
                         Material</label>
                     <select id="material" name="material"
-                        class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2">
+                        class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2 fondo-inputs">
                         <option value="excelente">Excelente</option>
                         <option value="bueno">Bueno</option>
                         <option value="regular">Regular</option>
@@ -41,7 +53,7 @@
                     <label for="instrucciones" class="block mb-0.5 text-sm font-medium text-gray-900">Claridad de las
                         Instrucciones</label>
                     <select id="instrucciones" name="instrucciones"
-                        class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2">
+                        class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2 fondo-inputs">
                         <option value="excelente">Excelente</option>
                         <option value="bueno">Bueno</option>
                         <option value="regular">Regular</option>
@@ -52,7 +64,7 @@
                     <label for="comentarios" class="block mb-0.5 text-sm font-medium text-gray-900">Comentarios
                         Adicionales</label>
                     <textarea id="comentarios" name="comentarios" rows="4"
-                        class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2"
+                        class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2 fondo-inputs"
                         placeholder="Escribe tus comentarios adicionales aquí"></textarea>
                 </div>
                 <button type="submit"

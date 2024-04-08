@@ -7,32 +7,58 @@
     <title>Plataforma Registro profesores</title>
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
+<header>
+    <nav>
+        <ul>
+            <li><a href="perfil.usuario.html">Perfil usuario</a></li>
+            <li><a href="evaluacion_curso.html">Evaluacion Curso </a></li>
+            <li><a href="formulario_inscripcion_curso.html">Inscripcion curso</a></li>
+            <li><a href="Soporte_tecnico.html">soporte tecnico</a></li>
+            <li><a href="R_Estudiantes.html">Registro Estudiantes</a></li>
+        </ul>
+    </nav>
+</header>
 
-<body class="bg-gray-100 p-6">
+
+<body class="bg-gray-100">
 
     <div class="bg-gray-100 min-h-screen flex justify-center items-center">
-        <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+        <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md fondo-lindo">
 
             <h1 class="text-2xl font-bold mb-8 uppercase text-center">Formulario de Soporte Técnico</h1>
-            <form action="perfil.usuario.html" method="POST" class="w-full max-w-md m-5">
+            <form action="perfil.usuario.html" method="POST">
                 <div class="mb-4">
                     <label for="problema" class="block mb-0.5 text-sm font-medium text-gray-900">Descripción del
                         Problema</label>
                     <textarea id="problema" name="problema" rows="4"
-                        class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2"
+                        class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2 fondo-inputs"
                         placeholder="Describe el problema que estás experimentando"></textarea>
                 </div>
                 <div class="mb-4">
-                    <label for="capturas" class="block mb-0.5 text-sm font-medium text-gray-900">Adjuntar Capturas de
-                        Pantalla (Opcional)</label>
-                    <input type="file" id="capturas" name="capturas" accept="image/*"
-                        class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2">
+                    <label for="file-upload" class="block text-sm font-medium text-gray-700">Selecciona
+                        archivos</label>
+                   <p class="italic text-sm text-gray-700 mb-2">Indique su campo de especialización, experiencia docente, y cualquier certificación o
+                        título relevante..</p>
+                   <div
+                        class="relative flex items-center justify-between rounded-md border px-3 py-2 fondo-inputs">
+                        <input id="file-upload" name="file-upload" type="file"
+                             class="absolute inset-0 z-10 w-full opacity-0" />
+                        <div class="flex items-center">
+                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500"
+                                  viewBox="0 0 20 20" fill="currentColor">
+                                  <path fill-rule="evenodd"
+                                       d="M8.667 6.333a.667.667 0 1 1 1.333 0V10h3.667a.667.667 0 1 1 0 1.333H10v3.667a.667.667 0 1 1-1.333 0V11H5.667a.667.667 0 1 1 0-1.334H9V6.333z"
+                                       clip-rule="evenodd" />
+                             </svg>
+                             <span class="ml-2 text-gray-500">Selecciona un archivo...</span>
+                        </div>
+                   </div>
                 </div>
                 <div class="mb-4">
                     <label for="contacto" class="block mb-0.5 text-sm font-medium text-gray-900">Información de
                         Contacto</label>
                     <input type="text" id="contacto" name="contacto"
-                        class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2"
+                        class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2 fondo-inputs"
                         placeholder="Proporciona tu dirección de correo electrónico o número de teléfono" required>
                 </div>
                 <button type="submit"

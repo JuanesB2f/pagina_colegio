@@ -8,18 +8,30 @@
     <!-- Agrega los estilos de Tailwind CSS -->
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
+<header>
+    <nav>
 
-<body class="bg-gray-100 p-6">
+        <ul>
+            <li><a href="perfil.usuario.html">Perfil usuario</a></li>
+            <li><a href="evaluacion_curso.html">Evaluacion Curso </a></li>
+            <li><a href="formulario_inscripcion_curso.html">Inscripcion curso</a></li>
+            <li><a href="Soporte_tecnico.html">soporte tecnico</a></li>
+            <li><a href="R_Estudiantes.html">Registro Estudiantes</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <div class="bg-gray-100 min-h-screen flex justify-center items-center">
-        <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+<body class="bg-gray-100">
+    <div style="height: 100px;"></div>
+    <div class=" min-h-screen flex justify-center items-center">
+        <div class="fondo-lindo p-8 rounded-lg shadow-md w-full max-w-md">
 
             <h1 class="text-2xl font-bold mb-8 uppercase text-center">Inscripción en Curso</h1>
-            <form action="evaluacion_curso.html" method="POST" class="w-full max-w-md m-5">
+            <form action="evaluacion_curso.html" method="POST">
                 <div class="mb-4">
                     <label for="course" class="block mb-0.5 text-sm font-medium text-gray-900">Curso deseado</label>
                     <select id="course" name="course"
-                        class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2">
+                        class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2 fondo-inputs">
                         <option value="course1">Curso 1 - Introducción a Tailwind CSS</option>
                         <option value="course2">Curso 2 - Desarrollo Web Avanzado</option>
                         <option value="course3">Curso 3 - Fundamentos de JavaScript</option>
@@ -28,30 +40,30 @@
                 <div class="mb-4">
                     <label for="name" class="block mb-0.5 text-sm font-medium text-gray-900">Nombre</label>
                     <input type="text" id="name" name="name"
-                        class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2"
+                        class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2 fondo-inputs"
                         placeholder="Nombre completo" required>
                 </div>
                 <div class="mb-4">
                     <label for="age" class="block mb-0.5 text-sm font-medium text-gray-900">Edad</label>
                     <input type="number" id="age" name="age"
-                        class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none" min="0">
+                        class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none fondo-inputs" min="0">
                 </div>
                 <div class="mb-4">
                     <label for="email" class="block mb-0.5 text-sm font-medium text-gray-900">Email</label>
                     <input type="email" id="email" name="email"
-                        class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2"
+                        class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2 fondo-inputs"
                         placeholder="correo@example.com" required>
                 </div>
                 <div class="mb-4">
                     <label for="phone" class="block mb-0.5 text-sm font-medium text-gray-900">Teléfono</label>
                     <input type="tel" id="phone" name="phone"
-                        class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2"
+                        class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2 fondo-inputs"
                         placeholder="Número de teléfono">
                 </div>
                 <div class="mb-4">
                     <label for="program" class="block mb-0.5 text-sm font-medium text-gray-900">Programa</label>
                     <select id="program" name="program"
-                        class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2">
+                        class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2 fondo-inputs">
                         <option value="program1">Ing. Software</option>
                         <option value="program2">Ing. Sistemas</option>
                         <option value="program3">Ing. Industrial</option>
@@ -60,23 +72,26 @@
                 <div class="mb-4">
                     <label for="shift" class="block mb-0.5 text-sm font-medium text-gray-900">Jornada</label>
                     <select id="shift" name="shift"
-                        class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2">
+                        class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none mb-2 fondo-inputs">
                         <option value="shift1">Diurno</option>
                         <option value="shift2">Nocturno</option>
                     </select>
                 </div>
                 <div class="mb-4">
-                    <label for="current_period" class="block mb-0.5 text-sm font-medium text-gray-900">Periodo actual cursando</label>
+                    <label for="current_period" class="block mb-0.5 text-sm font-medium text-gray-900">Periodo actual
+                        cursando</label>
                     <input type="number" id="current_period" name="current_period"
-                        class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none" min="0">
+                        class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none fondo-inputs" min="0">
                 </div>
                 <button type="submit"
                     class="bg-blue-500 text-white font-semibold px-4 py-2 rounded-md hover:bg-blue-600 transition-colors">Enviar</button>
             </form>
-            <a href="inicio_sesion_E.html" class="text-blue-600 hover:underline block mt-4">Volver al inicio de sesión</a>
+            <br>
+            <a href="inicio_sesion_E.html" class="text-blue-600 hover:underline block mt-4">Volver al inicio de
+                sesión</a>
         </div>
     </div>
-
+    <div style="height: 50px;"></div>
 </body>
 
 </html>

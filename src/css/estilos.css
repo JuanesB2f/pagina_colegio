@@ -819,6 +819,10 @@ video {
 }
 
 .bg-gray-100 {
+  background-image: url('../images/libros.jpg'); /* Reemplaza 'ruta/a/tu/imagen.jpg' con la ruta real a tu imagen */
+  background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+  background-position: center; /* Centra la imagen en el fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
@@ -1230,4 +1234,74 @@ video {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgb(37 99 235 / var(--tw-ring-opacity));
   }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+@media (min-width: 640px) {
+  .max-w-640 {
+       max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .max-w-640 {
+       max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .max-w-640 {
+       max-width: 500px;
+  }
+}
+
+.fondo-lindo {
+  background: rgba(255, 255, 255, 0.90);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.fondo-inputs {
+  background: rgba(255, 255, 255, 0.02) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.9px);
+}
+
+header {
+  background: rgba(255, 255, 255, 0.65);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+nav {
+  float: left;
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden; 
+}
+
+nav ul li {
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+  color: #000;
+  text-decoration: none;
+}
+
+nav ul li:hover {
+  background: #eca023;
 }

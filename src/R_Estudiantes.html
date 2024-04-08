@@ -7,43 +7,57 @@
      <title>Plataforma</title>
      <link rel="stylesheet" href="./css/estilos.css">
 </head>
+<header>
+     <nav>
+ 
+         <ul>
+             <li><a href="perfil.usuario.html">Perfil usuario</a></li>
+             <li><a href="evaluacion_curso.html">Evaluacion Curso </a></li>
+             <li><a href="formulario_inscripcion_curso.html">Inscripcion curso</a></li>
+             <li><a href="Soporte_tecnico.html">soporte tecnico</a></li>
+             <li><a href="R_Estudiantes.html">Registro Estudiantes</a></li>
+         </ul>
+     </nav>
+ </header>
 
-<body class="bg-neutral-200">
+<body class="bg-gray-100"
+     style="background-image: url(images/libros.jpg); background-repeat: no-repeat; background-attachment: fixed; background-color:rgba(0, 0, 0, 0.5);">
      <div class="flex justify-center items-center h-screen">
           <div class="container mx-auto px-4">
-               <div class="w-full mx-auto sm max-w-640 rounded-lg bg-white p-1 shadow-md">
-                    <h1 class="text-3xl font-bold uppercase text-center mt-6">Registro Estudiantes</h1>
+               <div style="height: 100px;"></div>
+               <div class="w-full mx-auto sm max-w-640 border border-gray-800 border-4 rounded-lg fondo-lindo">
+                    <h1 class="text-3xl font-bold uppercase text-center mt-6 text-black">Registro Estudiantes</h1>
                     <form action="formulario_inscripcion_curso.html" method="POST" class="p-4 sm:p-6">
                          <div class="mb-4">
-                              <label for="nombre" class="block mb-0.5 text-sm font-medium text-gray-900">Nombre</label>
+                              <label for="nombre" class="block mb-0.5 text-sm font-medium text-black">Nombre</label>
                               <input type="text" id="nombre" name="nombre" required
-                                   class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none"
+                                   class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none fondo-inputs"
                                    placeholder="John Doe">
                          </div>
                          <div class="mb-4">
-                              <label for="email" class="block mb-0.5 text-sm font-medium text-gray-900">Email</label>
+                              <label for="email" class="block mb-0.5 text-sm font-medium text-black">Email</label>
                               <input type="email" id="email" name="email" required
-                                   class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none"
+                                   class="bg-gray-200 text-sm rounded-lg w-full p-2.5 text-black focus:outline-none fondo-inputs"
                                    placeholder="johndoe@example.com">
                          </div>
                          <div class="mb-4">
                               <label for="password"
-                                   class="block mb-0.5 text-sm font-medium text-gray-900">Contraseña</label>
+                                   class="block mb-0.5 text-sm font-medium text-black">Contraseña</label>
                               <input type="password" id="password" name="password" required
-                                   class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none"
+                                   class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none fondo-inputs"
                                    placeholder="••••••••">
                          </div>
                          <div class="mb-4">
-                              <label for="edad" class="block mb-0.5 text-sm font-medium text-gray-900">Edad</label>
+                              <label for="edad" class="block mb-0.5 text-sm font-medium text-black">Edad</label>
                               <input type="number" id="edad" name="edad" required
-                                   class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none"
+                                   class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none fondo-inputs"
                                    placeholder="18">
                          </div>
                          <div class="mb-4">
-                              <label for="nivel-educativo" class="block mb-0.5 text-sm font-medium text-gray-900">Nivel
+                              <label for="nivel-educativo" class="block mb-0.5 text-sm font-medium text-black">Nivel
                                    Educativo</label>
                               <select id="nivel-educativo" name="nivel-educativo" required
-                                   class="bg-gray-200 text-sm rounded-lg w-full p-3 dark:text-black focus:outline-none">
+                                   class="bg-gray-200 text-sm rounded-lg w-full p-3 dark:text-black focus:outline-none fondo-inputs">
                                    <option value="none" selected>Selecciona un nivel educativo</option>
                                    <option value="primaria">Primaria</option>
                                    <option value="secundaria">Secundaria</option>
@@ -53,21 +67,25 @@
                               </select>
                          </div>
                          <div class="mb-4">
-                              <label for="institucion"
-                                   class="block mb-0.5 text-sm font-medium text-gray-900">Institución o Escuela a
+                              <label for="institucion" class="block mb-0.5 text-sm font-medium text-black">Institución o
+                                   Escuela a
                                    la que Pertenece</label>
                               <input type="text" id="institucion" name="institucion"
-                                   class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none"
+                                   class="bg-gray-200 text-sm rounded-lg w-full p-2.5 dark:text-black focus:outline-none fondo-inputs"
                                    placeholder="Ejemplo: IUDC">
                          </div>
                          <button type="submit"
-                              class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mt-2">Registrar</button>
+                              class="w-full text-black bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mt-2 text-white">Registrar</button>
+                              <div style="height: 25px;"></div>
+                              <a href="inicio_sesion_E.html" class="text-blue-600 hover:underline block mt-4">Volver al inicio de
+                                  sesión</a>
                     </form>
                </div>
 
           </div>
      </div>
-     <a href="inicio_sesion_E.html" class="text-blue-600 hover:underline">Volver al inicio de sesión</a>
+     
+     <div style="height: 50px;"></div>
 </body>
 
 </html>
